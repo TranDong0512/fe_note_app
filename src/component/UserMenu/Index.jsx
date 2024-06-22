@@ -33,6 +33,7 @@ function UserMenu() {
     try {
       const response = await dispatch(Logout());
       if (Logout.fulfilled.match(response)) {
+        console.log(111);
         localStorage.removeItem("info");
         Cookies.remove("TokenUser");
         location.reload();

@@ -27,7 +27,8 @@ export const addData = async (
   try {
     const response = await axiosCustom.post(`${BASE_URL}${url}`, data, {
       headers: {
-        Authorization: `Bearer ${token}`
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
       },
     });
     return response?.data;

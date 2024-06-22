@@ -14,7 +14,6 @@ function FolderList({ folders }) {
   const deleteF = async () => {
     try {
       const result = await dispatch(deleteFolder({ idFolder: activeFolderId }));
-      console.log(result);
       if (deleteFolder.fulfilled.match(result)) {
         setActiveFolderId(folders[0].idFolder);
         navigate(`/folders/${folders[0].idFolder}`);

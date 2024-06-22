@@ -1,0 +1,28 @@
+.wrapper {
+    width: 420px;
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    
+}
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+.register_link {
+   font-size: 14.5px;
+   text-align: center;
+   margin: 20px 0 15px;
+}
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.link:hover {
+    text-decoration: underline;
+}
